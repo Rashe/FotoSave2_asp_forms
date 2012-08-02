@@ -1,0 +1,200 @@
+﻿.logindivmer {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.logindivmer2 {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.contataer {
+	width:90%;
+	min-width: 1210px !important;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	
+	
+	
+}
+
+
+.clear{
+    clear: both;
+}
+
+.footer 
+{
+    margin-top: 150px;
+    height: 50px;
+    width: 100%;
+}
+
+.youimagegallery {
+	width:90%;
+	min-width: 1210px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+/*** JQ GAlery ***/
+
+#container1 {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+
+/**** Clearfix ****/
+.clearfix1:before, .clearfix:after { content: ""; display: table; }
+.clearfix1:after { clear: both; }
+.clearfix1 { zoom: 1; }
+
+
+.box1 {
+  margin: 5px;
+  padding: 5px;
+  background: #f5f5f5;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.box1 h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.box1 img,
+#tumblelog img {
+  display: block;
+  width: 100%;
+}
+
+.rt .box1 {
+  float: right;
+  text-align: right; 
+  direction: rtl;
+}
+
+
+.has-gutters .box1 {
+  margin: 5px 0;
+}
+
+.col1113 { width: 280px; }
+
+.col1113 img { max-width: 280px; }
+
+
+
+.cus-image-marg 
+{
+    text-align: center;
+	
+}
+
+
+.cus-image-show-marg {
+	
+	
+	max-width: 820px;
+}
+
+.image-span3-info-show {
+	
+}
+
+.mybtncss {
+	width: 80px;
+}
+
+.user-margin-for-span2 {
+	margin-top: 40px;
+}
+
+.mer-margin-left {
+	margin-left: 18px;
+}
+
+.comment-div{
+	width:880px;
+	min-height: 75px;
+	height: 100%;
+	background-color:#f5f5f5;
+	
+}
+
+.comment-div-avatar {
+	float: left;
+	margin-right: 5px;
+}
+
+.coment-avatar-style {
+	width:70px;
+	height: 70px;
+	/*position: relative;*/
+	
+}
+
+.cus-hr-comment {
+	width: 880px;
+	margin-left: 20px;
+}
+
+.cus-404-error 
+{
+    text-align: center;
+    margin-top: 50px;
+}
+#MainContent_cusWelcomeDiv {
+	/*width: 500px;*/
+}
+
+.cus-greeny {
+	color: green;
+}
+
+.cus-info-div-avatar {
+	float: left;
+	margin-right: 3px;
+}
+
+.cus-more-image-show {
+	width: 85px;
+	height: 85px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.cus-nav {
+	min-width: 1210px !important;
+}
+
+.cus-images-prev {
+	margin-top: 100px;
+}
+
+.cus-login-style {
+	margin-left:0px;
+}
+
+#MainContent_LoginUser_RememberMe {
+	margin-left:0px;
+	margin-right: 5px;
+}
