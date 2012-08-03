@@ -14,32 +14,6 @@ public partial class Account_follow : System.Web.UI.Page
     }
 
 
-    public string GetImageUrl(object img)
-    {
-
-        //  MembershipUser currentUser = Membership.GetUser();
-        //  string userName = currentUser.ToString();
-
-        string img_File = "";
-        if (img != null)
-            img_File = img.ToString();
-        if (img_File == "")
-            return "~/Images/image-not-found.gif";
-        return "~/UserUploads/280/" + img_File + ".jpg";
-
-
-    }
-
-    public string GetImageLink(object thelink)
-    {
-        string ImageName = "";
-        if (thelink != null)
-        {
-            ImageName = thelink.ToString();
-        }
-        return "~/Account/Image.aspx?img=" + ImageName;
-    }
-
 
     protected void SqlLVFollowImagesShow_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
     {

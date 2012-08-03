@@ -9,7 +9,7 @@
             <h2>Not Found.. 404 Error</h2>
             <br />
             <br />
-            <h2>But You Found Me :)</h2>
+            <h2>But You Found Me</h2>
             <br />
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/smiling-cat.jpg" />
         </div>

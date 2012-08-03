@@ -11,9 +11,10 @@
 
 <hr />
 
-    <h1>I'm working on it</h1>
+    <h1>Still working on it</h1>
 
-    <asp:ListView ID="LVFollowImagesShow" runat="server">
+    <asp:ListView ID="LVFollowImagesShow" runat="server" 
+        DataSourceID="SqlLVFollowImagesShow">
 
     <LayoutTemplate>
         <div id="container1" class="clearfix1">
@@ -42,8 +43,8 @@
          <ItemTemplate>
          <div class="box1 photo1 col1113">
         
-            <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# GetImageLink( Eval("ImageName"))%>' runat="server">
-             <asp:Image ID="Image1" ImageUrl='<%# GetImageUrl( Eval("ImageName"))%>' runat="server" />
+            <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# GlobalFunc.GetImageLink( Eval("ImageName"))%>' runat="server">
+             <asp:Image ID="Image1" ImageUrl='<%# GlobalFunc.GetImageUrl280( Eval("ImageName"))%>' runat="server" />
              <br />
                 <asp:Label ID="Label3" runat="server" Text="Total Likes:" ForeColor="Black"></asp:Label>
                 <asp:Label ID="Label1" runat="server" Text='<%# Bind("NumOfLikes") %>'></asp:Label>
@@ -92,7 +93,8 @@
     <asp:SqlDataSource ID="SqlLVFollowImagesShow" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ApplicationServices %>" 
         onselecting="SqlLVFollowImagesShow_Selecting" 
-        SelectCommand="SELECT Cus_Followers.FollowId, Cus_Followers.UserId, Cus_Followers.MyUserId AS Expr1, Cus_Followers.ProfileName AS Expr2, Cus_Followers.MyUserName, Cus_Followers.MyProfilelName, Cus_Upload.UserId, Cus_Upload.ImageId, Cus_Upload.ImageName, Cus_Upload.Date, Cus_Upload.ProfileName FROM Cus_Followers CROSS JOIN Cus_Upload WHERE (Cus_Followers.MyUserId = @MyUserId) ORDER BY Cus_Upload.Date DESC">
+        
+        SelectCommand="SELECT Cus_Followers.FollowId, Cus_Followers.UserId, Cus_Followers.MyUserId AS Expr1, Cus_Followers.ProfileName AS Expr2, Cus_Followers.MyUserName, Cus_Followers.MyProfilelName, Cus_Upload.UserId AS Expr3, Cus_Upload.ImageId, Cus_Upload.ImageName, Cus_Upload.Date, Cus_Upload.ProfileName, Cus_Upload.NumOfLikes FROM Cus_Followers CROSS JOIN Cus_Upload WHERE (Cus_Followers.MyUserId = @MyUserId) ORDER BY Cus_Upload.Date DESC">
         <SelectParameters>
             <asp:Parameter Name="MyUserId" Type="Object" />
         </SelectParameters>

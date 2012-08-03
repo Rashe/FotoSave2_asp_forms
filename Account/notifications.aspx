@@ -25,28 +25,30 @@
                 <br />
             </LayoutTemplate>
             <ItemTemplate>
-                <div class="row">
-                    <div class="span1">
-                        <asp:Image ID="Image1" runat="server" AlternateText='<%# Eval ("UserName") %>' ImageUrl='<%# GlobalFunc.GetImageUrlAvatar( Eval("Avatar"))%>'
-                            CssClass="coment-avatar-style" />
-                    </div>
-                    <div class="span8">
-                        <div>
-                            <asp:Label ID="Label3" runat="server" Text='<%# Bind("Date")%>' Font-Size="Smaller"
-                                Font-Italic="True" ForeColor="#666666"></asp:Label>
-                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("isRead")%>' ForeColor="Red"
-                                Font-Bold="True"></asp:Label>
+                <div class="well">
+                    <div class="row">
+                        <div class="span1">
+                            <asp:Image ID="Image1" runat="server" AlternateText='<%# Eval ("UserName") %>' ImageUrl='<%# GlobalFunc.GetImageUrlAvatar( Eval("Avatar"))%>'
+                                CssClass="coment-avatar-style" />
                         </div>
-                        <div>
-                            <asp:HyperLink ID="HLProfielName" runat="server" Text='<%# Bind("ProfileName") %>'
-                                NavigateUrl='<%# GlobalFunc.GetUserNameLinkUrl( Eval("ProfileName")) %>'></asp:HyperLink>
-                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("NotifBody") %>'></asp:Label>
-                            <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# GlobalFunc.GetImageLink( Eval("ImageName"))%>'
-                                Text='<%# Bind("ImageName") %>' runat="server"></asp:HyperLink>
+                        <div class="span8">
+                            <div>
+                                <asp:Label ID="Label3" runat="server" Text='<%# Bind("Date")%>' Font-Size="Smaller"
+                                    Font-Italic="True" ForeColor="#666666"></asp:Label>
+                                <asp:Label ID="Label2" runat="server" Text='<%# Bind("isRead")%>' ForeColor="Red"
+                                    Font-Bold="True"></asp:Label>
+                            </div>
+                            <div>
+                                <asp:HyperLink ID="HLProfielName" runat="server" Text='<%# Bind("ProfileName") %>'
+                                    NavigateUrl='<%# GlobalFunc.GetUserNameLinkUrl( Eval("ProfileName")) %>'></asp:HyperLink>
+                                <asp:Label ID="Label1" runat="server" Text='<%# Bind("NotifBody") %>'></asp:Label>
+                                <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# GlobalFunc.GetImageLink( Eval("ImageName"))%>'
+                                    Text='<%# Bind("ImageName") %>' runat="server"></asp:HyperLink>
+                                <br />
+                            </div>
+                            <br />
                             <br />
                         </div>
-                        <br />
-                        <br />
                     </div>
                 </div>
             </ItemTemplate>

@@ -52,7 +52,7 @@
                                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Account/follow.aspx">Images From Followed</asp:HyperLink>
                                     </li>
                                     <li>
-                                        <asp:HyperLink ID="HyperLink3" runat="server">Folks Online</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Account/users-online.aspx">Folks Online</asp:HyperLink>
                                     </li>
                                     <li>
                                         <asp:HyperLink ID="HyperLink4" runat="server">New comments</asp:HyperLink>

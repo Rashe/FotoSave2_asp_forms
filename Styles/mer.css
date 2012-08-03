@@ -175,6 +175,11 @@
 	margin-right: 3px;
 }
 
+.cus-info-div-avatar2 {
+	float: left;
+	margin-right: 13px;
+}
+
 .cus-more-image-show {
 	width: 85px;
 	height: 85px;
@@ -197,4 +202,15 @@
 #MainContent_LoginUser_RememberMe {
 	margin-left:0px;
 	margin-right: 5px;
+}
+
+.cus-list-li-inline
+{
+    
+   display: inline;
+}
+
+.cus-list-li-margin
+{
+    margin-left: 10px;
 }
