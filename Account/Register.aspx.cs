@@ -28,7 +28,7 @@ public partial class Account_Register : System.Web.UI.Page
         MembershipUser newUser = Membership.GetUser(RegisterUser.UserName);
      Guid newUserId = (Guid)newUser.ProviderUserKey;
 
-        string ConnectionString = ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;
+     string ConnectionString = Checks.getConnectionString();
 
         string insertSqlMoreInfo = "INSERT INTO Cus_MoreInfo(UserId, HomeTown, FirstName, LastName, About, Avatar) VALUES(@UserId, @HomeTown, @FirstName, @LastName, @About, @Avatar)";
 

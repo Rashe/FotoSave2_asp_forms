@@ -54,7 +54,7 @@ public partial class SiteMaster : System.Web.UI.MasterPage
         Guid currentUserId = (Guid)currentUser.ProviderUserKey;
             string isRead= "NEW";
 
-            string ConnectionString = ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;
+            string ConnectionString = Checks.getConnectionString();
             string selectSqlNotifCheck = "SELECT COUNT(NotifId) FROM Cus_Notif WHERE UserName=@UserName AND isRead=@isRead";
             using (SqlConnection myConnection = new SqlConnection(ConnectionString))
             {
